@@ -1,0 +1,58 @@
+
+
+.border-theme-form-inputs{
+    border: 0.5px;
+    border-color: #c9c9c9;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
+input.border-theme-form-inputs{
+    padding: 5px;
+}
+a{
+    color: #0394d5;
+}
+@media screen and (min-width:500){
+    div.login{
+        grid-column: 3 / 11;
+    }
+}
+@media screen and (min-width:640){
+    div.login{
+        grid-column: 4 / 10;
+    }
+}
+
+@media screen and (min-width:980){
+    div.login{
+        grid-column: 5 / 9;
+    }
+}
+
+@media screen and (min-width:1200){
+    div.login{
+        width: 70%;
+        place-self: center;
+    }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 45px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(#0394d5 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
